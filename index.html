@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <link  href="style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script>
+        function showAlert() {
+          var myText = "This page has not been developed yet!";
+          alert (myText);
+        }
+    </script>
+  
+</head>
+
+<body>
+
+    <header class="site-header clearfix">
+        <nav>
+            <div class="logo">
+                <h1>hash.prog</h1>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#"><button class="glossy-button glossy-button--blue">Home</button></a></li>
+                    <!-- <li><a href="https://www.youtube.com/channel/UCp3ivLq9PRtnOOUrM8uYTsA">YouTube</a></li> -->
+                    <li><a href="#"><button class="glossy-button glossy-button--red" onclick="showAlert()">About Me</button></a></li>
+                    <li><a href="https://flow.page/quickcodes" target="_blank"><button class="glossy-button glossy-button--green">Contact</button></a></li>
+                </ul>
+            </div>
+            <script>
+                $(document).ready(function(){
+                  $('[data-toggle="tooltip"]').tooltip();
+                });
+                </script>
+        </nav>
+        <section>
+
+            <div class="leftside">
+                <iframe src="socialmedia.html" frameborder="0" width="1080px" height="500"></iframe>
+            </div>
+            <div class="rightside">
+                <p>I'm</p>
+                <h1>Harsh Soni</h1>
+                <p> Connect to me on Instagram! </p>
+                <button class="ig"
+                    onclick="window.location.href = 'https://instagram.com/hash.prog';">Follow on Instagram</button>
+                    
+                <button class="gh"
+                    onclick="window.location.href = 'https://instagram.com/hash.prog';">Visit Github Profile</button>
+            </div>
+
+        </section>
+
+        
+    </header>
+    
+
+    <!-- <div class="footer">
+
+    </div> -->
+
+</body>
+
+</html>

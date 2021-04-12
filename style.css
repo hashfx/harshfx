@@ -1,0 +1,210 @@
+*{
+    margin: 0; padding:0; box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background: transparent;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+	/* background-color: #39ff14; */
+	color:whitesmoke;
+	text-decoration: none;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 1.5em;
+	padding: 6px 4px;
+	margin: 4px;
+	/* border-right: 2px solid #999999;
+	border-bottom: 2px solid #999999; */
+	/* border-top-width: 0px;
+	border-left-width: 0px; */
+    opacity: 0.9;
+}
+
+a:hover
+{
+	color: #030;
+	border: 1px solid #9999ff;
+}
+
+a:active
+{
+	color: #aca;
+	border-left: 2px solid #030;
+	border-top: 2px solid #030;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+}
+
+
+.site-header {
+    width: 100%;
+    height: 100vh;
+    background: #0f8a9d;
+    /* background: linear-gradient(57deg, #00C6A7 , #1E4D92 ); */
+    background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%); 
+    /* clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%); */
+
+}
+
+
+nav{
+    width: 100%; height: 100px;
+    /*background-color:  red;*/
+    display: flex; color: white;
+    position: fixed;
+    
+}
+
+.logo{
+    width: 50%;
+    height: 100px;
+}
+
+.logo h1{
+    line-height: 100px;
+    padding-left: 50px;
+}
+
+.menu{
+    width: 50%; height: 100px;
+}
+
+.menu ul{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items:  center;
+}
+
+.menu ul li{
+    list-style: none;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+section{ display: flex;}
+
+
+
+.leftside { width: 60%; height: auto; overflow: hidden; margin-top: 100px; margin-left: 50px;}
+
+/* .leftside img{  width: 500px;  height: 400px; } */
+
+
+.rightside{ width: 40%; height: 300px; color: white; text-align: center; margin-top: 100px; padding: 40px;}
+
+.rightside h1{ text-align: center;
+    color: #ffffff;
+    font-size: 56px;
+    font-weight: 900;
+    text-transform: uppercase; } 
+
+.rightside p {  
+    font-size: 1.5rem; padding: 30px 0; }
+
+.ig{   
+    font-size: 17px;
+    font-weight: 600;
+    color: white;
+    text-transform: uppercase;
+    background: linear-gradient(57deg, #0492c2, #39FF14  ); 
+    border-radius: 4px 4px 4px 4px;
+    padding: 20px 35px ; 
+    margin-bottom: 10px;
+}
+
+.gh{   
+    font-size: 17px;
+    font-weight: 600;
+    color: #24252a;
+    text-transform: uppercase;
+    background: linear-gradient(57deg, #0492c2, #005f69 ); 
+    border-radius: 4px 4px 4px 4px;
+    padding: 20px 35px ; 
+    margin-bottom: 10px;
+}
+
+
+
+.rightside button:hover{
+    background: linear-gradient(57deg, #de6262, #ffb88c)  
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 40px;
+    width: 100%;
+    background-color: yellowgreen;
+    color: black;
+    text-align: center;
+    text-align: center;
+    
+}
+
+.glossy-button {
+    display: inline-block;
+    position: relative;
+    background-color: #AAA;
+    background-image: linear-gradient( /* chrome */
+      hsla(0, 0%, 100%, 0.6), hsla(0, 0%, 100%, 0) 50%,
+      hsla(0, 0%, 0%, 0.3) 50%, hsla(0, 0%, 100%, 0.2)
+    );
+    font-size: 22px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: white;
+    padding: 20px 40px;
+    text-shadow:
+      0 0 15px hsla(0, 0%, 100%, 1), /* bloom */
+      0 2px 4px hsla(0, 0%, 0%, 0.7); /* drop shadow */
+    border: none;
+    border-radius: 50px;
+    margin: 10px;
+    box-shadow:
+      inset 0 -5px 20px hsla(0, 0%, 0%, 0.4), /* top light */
+      inset 0 5px 20px hsla(0, 0%, 100%, 0.4), /* bottom shadow */
+      /* multiple light sources yall */
+      -8px 8px 5px hsla(0, 0%, 0%, 0.15), /* drop shadow 1 */
+      5px 18px 10px hsla(0, 0%, 0%, 0.2); /* drop shadow 2 */
+    cursor: pointer;
+    transition: transform 0.1s, box-shadow 0.1s;
+  }
+  
+  /* highlight */
+  .glossy-button:before {
+    /* content: ''; */
+    content: none;
+    display: block;
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    top: 5px;
+    height: 30px;
+    border-radius: 15px;
+    background: linear-gradient(
+      hsla(0, 0%, 100%, 0.8), hsla(0, 0%, 100%, 0) );
+  }
+  .glossy-button:hover {
+    transform: scale(1.05);
+    box-shadow:
+      inset 0 -5px 20px hsla(0, 0%, 0%, 0.4), /* top light */
+      inset 0 5px 20px hsla(0, 0%, 100%, 0.4), /* bottom shadow */
+      /* multiple light sources yall */
+      -12px 12px 5px hsla(0, 0%, 0%, 0.15), /* drop shadow 1 */
+      10px 25px 10px hsla(0, 0%, 0%, 0.2); /* drop shadow 2 */
+  }
+
+  .glossy-button--blue { background-color: #19F; }
+  .glossy-button--red { background-color: #E21; }
+  .glossy-button--green { background-color: #d433aa; }
+
+
